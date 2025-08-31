@@ -1,0 +1,153 @@
+├── C:\Users\milan\Desktop\xmrigPT\.github.Name
+│   └── C:\Users\milan\Desktop\xmrigPT\.github\ISSUE_TEMPLATE.Name
+│       └── C:\Users\milan\Desktop\xmrigPT\.github\ISSUE_TEMPLATE\bug_report.md.Name
+├── C:\Users\milan\Desktop\xmrigPT\bin.Name
+│   └── C:\Users\milan\Desktop\xmrigPT\bin\WinRing0.Name
+│       ├── C:\Users\milan\Desktop\xmrigPT\bin\WinRing0\LICENSE.Name
+│       └── C:\Users\milan\Desktop\xmrigPT\bin\WinRing0\WinRing0x64.sys.Name
+├── C:\Users\milan\Desktop\xmrigPT\build.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\build\ALL_BUILD.vcxproj.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\build\ALL_BUILD.vcxproj.filters.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\build\cmake_install.cmake.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\build\CMakeCache.txt.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\build\CMakeFiles.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\build\CMakeFiles\4.1.0-rc3.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\build\CMakeFiles\a4408ae280d23a204b8dcc0d7930c193.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\build\CMakeFiles\cmake.check_cache.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\build\CMakeFiles\CMakeConfigureLog.yaml.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\build\CMakeFiles\CMakeScratch.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\build\CMakeFiles\generate.stamp.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\build\CMakeFiles\generate.stamp.depend.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\build\CMakeFiles\generate.stamp.list.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\build\CMakeFiles\InstallScripts.json.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\build\CMakeFiles\pkgRedirects.Name
+│   │   └── C:\Users\milan\Desktop\xmrigPT\build\CMakeFiles\TargetDirectories.txt.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\build\Release.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\build\Release\benchmark_10M.cmd.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\build\Release\benchmark_1M.cmd.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\build\Release\pool_mine_example.cmd.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\build\Release\rtm_ghostrider_example.cmd.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\build\Release\solo_mine_example.cmd.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\build\Release\WinRing0x64.sys.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\build\Release\xmrig-asm.lib.Name
+│   │   └── C:\Users\milan\Desktop\xmrigPT\build\Release\xmrig.exe.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\build\src.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\build\src\3rdparty.Name
+│   │   └── C:\Users\milan\Desktop\xmrigPT\build\src\crypto.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\build\x64.Name
+│   │   └── C:\Users\milan\Desktop\xmrigPT\build\x64\Release.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\build\xmrig-asm.dir.Name
+│   │   └── C:\Users\milan\Desktop\xmrigPT\build\xmrig-asm.dir\Release.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\build\xmrig-asm.vcxproj.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\build\xmrig-asm.vcxproj.filters.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\build\xmrig.dir.Name
+│   │   └── C:\Users\milan\Desktop\xmrigPT\build\xmrig.dir\Release.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\build\xmrig.sln.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\build\xmrig.vcxproj.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\build\xmrig.vcxproj.filters.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\build\ZERO_CHECK.vcxproj.Name
+│   └── C:\Users\milan\Desktop\xmrigPT\build\ZERO_CHECK.vcxproj.filters.Name
+├── C:\Users\milan\Desktop\xmrigPT\CHANGELOG.md.Name
+├── C:\Users\milan\Desktop\xmrigPT\cmake.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\cmake\argon2.cmake.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\cmake\asm.cmake.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\cmake\cpu.cmake.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\cmake\FindHWLOC.cmake.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\cmake\FindUV.cmake.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\cmake\flags.cmake.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\cmake\ghostrider.cmake.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\cmake\kawpow.cmake.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\cmake\OpenSSL.cmake.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\cmake\os.cmake.Name
+│   └── C:\Users\milan\Desktop\xmrigPT\cmake\randomx.cmake.Name
+├── C:\Users\milan\Desktop\xmrigPT\CMakeLists.txt.Name
+├── C:\Users\milan\Desktop\xmrigPT\config.Name
+├── C:\Users\milan\Desktop\xmrigPT\core.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\core\config.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\core\config\Config_default.h.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\core\config\Config_platform.h.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\core\config\Config.cpp.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\core\config\Config.h.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\core\config\ConfigTransform.cpp.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\core\config\ConfigTransform.h.Name
+│   │   └── C:\Users\milan\Desktop\xmrigPT\core\config\usage.h.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\core\Controller.cpp.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\core\Controller.h.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\core\Miner.cpp.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\core\Miner.h.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\core\Taskbar.cpp.Name
+│   └── C:\Users\milan\Desktop\xmrigPT\core\Taskbar.h.Name
+├── C:\Users\milan\Desktop\xmrigPT\GEMINI.md.Name
+├── C:\Users\milan\Desktop\xmrigPT\hw.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\hw\api.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\hw\api\api.cmake.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\hw\api\HwApi.cpp.Name
+│   │   └── C:\Users\milan\Desktop\xmrigPT\hw\api\HwApi.h.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\hw\dmi.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\hw\dmi\dmi.cmake.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\hw\dmi\DmiBoard.cpp.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\hw\dmi\DmiBoard.h.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\hw\dmi\DmiMemory.cpp.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\hw\dmi\DmiMemory.h.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\hw\dmi\DmiReader_mac.cpp.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\hw\dmi\DmiReader_unix.cpp.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\hw\dmi\DmiReader_win.cpp.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\hw\dmi\DmiReader.cpp.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\hw\dmi\DmiReader.h.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\hw\dmi\DmiTools.cpp.Name
+│   │   └── C:\Users\milan\Desktop\xmrigPT\hw\dmi\DmiTools.h.Name
+│   └── C:\Users\milan\Desktop\xmrigPT\hw\msr.Name
+│       ├── C:\Users\milan\Desktop\xmrigPT\hw\msr\Msr_linux.cpp.Name
+│       ├── C:\Users\milan\Desktop\xmrigPT\hw\msr\Msr_win.cpp.Name
+│       ├── C:\Users\milan\Desktop\xmrigPT\hw\msr\Msr.cpp.Name
+│       ├── C:\Users\milan\Desktop\xmrigPT\hw\msr\Msr.h.Name
+│       ├── C:\Users\milan\Desktop\xmrigPT\hw\msr\MsrItem.cpp.Name
+│       └── C:\Users\milan\Desktop\xmrigPT\hw\msr\MsrItem.h.Name
+├── C:\Users\milan\Desktop\xmrigPT\LICENSE.Name
+├── C:\Users\milan\Desktop\xmrigPT\net.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\net\c2_config.cpp.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\net\interfaces.Name
+│   │   └── C:\Users\milan\Desktop\xmrigPT\net\interfaces\IJobResultListener.h.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\net\JobResult.h.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\net\JobResults.cpp.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\net\JobResults.h.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\net\net_noise.cpp.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\net\Network.cpp.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\net\Network.h.Name
+│   └── C:\Users\milan\Desktop\xmrigPT\net\strategies.Name
+│       ├── C:\Users\milan\Desktop\xmrigPT\net\strategies\DonateStrategy.cpp.Name
+│       └── C:\Users\milan\Desktop\xmrigPT\net\strategies\DonateStrategy.h.Name
+├── C:\Users\milan\Desktop\xmrigPT\package.json.Name
+├── C:\Users\milan\Desktop\xmrigPT\persistence.Name
+├── C:\Users\milan\Desktop\xmrigPT\README.md.Name
+├── C:\Users\milan\Desktop\xmrigPT\res.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\res\app.ico.Name
+│   └── C:\Users\milan\Desktop\xmrigPT\res\app.rc.Name
+├── C:\Users\milan\Desktop\xmrigPT\src.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\src\App_unix.cpp.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\src\App_win.cpp.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\src\App.cpp.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\src\App.h.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\src\base.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\src\base\api.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\src\base\base.cmake.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\src\base\crypto.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\src\base\io.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\src\base\kernel.Name
+│   │   ├── C:\Users\milan\Desktop\xmrigPT\src\base\net.Name
+│   │   └── C:\Users\milan\Desktop\xmrigPT\src\base\tools.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\src\config.json.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\src\donate.h.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\src\Summary.cpp.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\src\Summary.h.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\src\version.h.Name
+│   └── C:\Users\milan\Desktop\xmrigPT\src\xmrig.cpp.Name
+├── C:\Users\milan\Desktop\xmrigPT\stealth.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\stealth\ads_manager.cpp.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\stealth\injection.cpp.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\stealth\loader_proxy.cpp.Name
+│   └── C:\Users\milan\Desktop\xmrigPT\stealth\time_distorter.cpp.Name
+├── C:\Users\milan\Desktop\xmrigPT\utils.Name
+│   ├── C:\Users\milan\Desktop\xmrigPT\utils\idle_detection.cpp.Name
+│   └── C:\Users\milan\Desktop\xmrigPT\utils\signal_flooder.cpp.Name
+└── C:\Users\milan\Desktop\xmrigPT\xmrig-mod.Name
