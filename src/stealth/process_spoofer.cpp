@@ -67,9 +67,13 @@ namespace ProcessSpoofer {
         // Gašenje originalnog procesa
         exit(0);
 
-        return true; // Tehnički, nikada nećemo doći do ovde
+        return true; // Tehnički, nikada neću doći do ovde
     }
+//milos
 
+/*mnmn
+
+lklklk*/
     bool TimeStampStomp(const char* targetFile, const char* sourceFile) {
         HandleGuard hSource(CreateFileA(sourceFile, GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING, 0, NULL));
         if (hSource.get() == INVALID_HANDLE_VALUE) {
